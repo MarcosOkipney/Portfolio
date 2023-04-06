@@ -150,6 +150,93 @@ nav .navlinks li a{
     transform: rotate(360deg);
 }
 
+/* Parte de PROJETOS */
+
+#projetos {
+    background-color: #333;
+}
+#projetos h2 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.proj {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0px auto;
+}
+.pro {
+    border-radius: 20px;
+}
+.pro img {
+    width: 250px;
+    height: 175px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.249);
+}
+.pro:hover{
+    background-color: #222;
+    transition-duration: 0.7s;
+    scale: 1.03;
+}
+.pro p {
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* Parte de HABILIDADES */
+
+#habilidades {
+    background-color: #222;
+    
+}
+#habilidades h2 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+#habilidades .itens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0px auto;
+}
+.itens .logo {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.273);
+    border-radius: 20px;
+    margin-right: 50px;
+}
+.itens .logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo:hover img{
+    scale: 1.1;
+    transition-duration: 0.8s;
+}
+
+
+
+
+/* RODAPÉ */
+footer {
+    background-color: #444;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
 /* Design responsivo e navegação para telas pequenas */
 
 @media(max-width: 900px) {
