@@ -139,13 +139,13 @@ nav .navlinks li a{
 .btn.active {
     border-color: blue;
 }
-.text .social i {
+.social i {
     color: white;
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
 }
-.text .social i:hover {
+.social i:hover {
     color: blue;
     transform: rotate(360deg);
 }
@@ -155,31 +155,33 @@ nav .navlinks li a{
 #projetos {
     background-color: #333;
 }
+
 #projetos h2 {
     text-align: center;
     color: white;
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: 700;
     font-size: 2.5rem;
 }
 .proj {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 .pro {
     border-radius: 20px;
+    padding-bottom: 20px;
 }
 .pro img {
-    width: 250px;
+    width: 300px;
     height: 175px;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.249);
 }
-.pro:hover{
+.pro:hover img{
     background-color: #222;
     transition-duration: 0.7s;
     scale: 1.03;
@@ -187,7 +189,6 @@ nav .navlinks li a{
 .pro p {
     color: white;
     text-align: center;
-    padding-bottom: 25px;
 }
 
 /* Parte de HABILIDADES */
@@ -200,23 +201,25 @@ nav .navlinks li a{
     text-align: center;
     color: white;
     padding-top: 50px;
+    
     font-weight: 700;
     font-size: 2.5rem;
 }
 #habilidades .itens {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0px auto;
 }
 .itens .logo {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.273);
     border-radius: 20px;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 .itens .logo img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .logo:hover img{
@@ -224,22 +227,44 @@ nav .navlinks li a{
     transition-duration: 0.8s;
 }
 
-
-
-
 /* RODAPÉ */
-footer {
-    background-color: #444;
-    margin: 50px;
+
+#footer {
+    width: 100%;
+    background-color: #333;
+}
+.footer-cont{
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
     padding: 20px;
-    text-align: center;
+}
+.footer-cont p {
     color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.footer-cont .social {
+    text-align: center;
+    padding: 10px;
+}
+.footer-cont .social i{
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.footer-cont .social i:hover{
+    color: blue;
+    transform: rotate(360deg);
 }
 
 
 /* Design responsivo e navegação para telas pequenas */
 
-@media(max-width: 900px) {
+@media(max-width: 800px) {
     nav .menu {
         display: initial;
     }
@@ -287,14 +312,30 @@ footer {
     nav .navlinks.open {
         right: 0;
     }
+    
 }
 
-@media(max-width: 900px) {
+@media(max-width: 980px) {
     .container {
         flex-direction: column;
         padding-top: 2rem;
     }
+    .container .proj{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .itens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        
+    }
     .text {
         padding: 40px 0px;
     }
+
 }
