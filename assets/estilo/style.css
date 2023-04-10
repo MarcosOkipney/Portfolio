@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -94,9 +96,9 @@ nav .navlinks li a{
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.325);
 }
 .image img {
-    height: 100%;
     width: 100%;
-    transition: 0.5s;
+    height: 100%;
+    transition: 1s;
 }
 .image img:hover {
     transform: scale(1.2);
@@ -158,15 +160,16 @@ nav .navlinks li a{
 
 #projetos h2 {
     text-align: center;
-    color: white;
+    font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+    color: rgb(210, 210, 210);
     padding-top: 20px;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2.5rem;
 }
 .proj {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0px auto;
 }
 .pro {
@@ -199,10 +202,10 @@ nav .navlinks li a{
 }
 #habilidades h2 {
     text-align: center;
-    color: white;
+    color: rgb(210, 210, 210);
     padding-top: 50px;
-    
-    font-weight: 700;
+    font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+    font-weight: 200;
     font-size: 2.5rem;
 }
 #habilidades .itens {
