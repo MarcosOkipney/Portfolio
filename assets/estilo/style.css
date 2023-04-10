@@ -268,16 +268,8 @@ nav .navlinks li a{
 
 
 /* Design responsivo e navegação para telas pequenas */
-@media (max-width: 400px) {
-    body {
-        overflow-x: hidden;
-    }
-}
 
 @media(max-width: 800px) {
-    body{
-        overflow-y: hidden;
-    }
     nav .menu {
         display: initial;
     }
@@ -301,13 +293,16 @@ nav .navlinks li a{
         transform: rotate(45deg);
         top: 0;
     }
+    nav .navlinks::-webkit-scrollbar {
+        display: none;
+    }
     nav .navlinks {
-        position: absolute;
+        position: fixed;
         top: 110px;
-        right:-40%;
+        right: -100%;
         bottom: 0;
-        width: 30%;
-        height: 40%;
+        width: 50%;
+        height: 50vh;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px #222;
@@ -329,9 +324,6 @@ nav .navlinks li a{
 }
 
 @media(max-width: 980px) {
-    body {
-        overflow-x: hidden;
-    }
     .container {
         flex-direction: column;
         padding-top: 2rem;

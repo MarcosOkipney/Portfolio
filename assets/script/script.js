@@ -4,7 +4,7 @@ let links = document.querySelector(".navlinks li");
 menu.addEventListener ("click", function(){
     this.classList.toggle("click");
     nav.classList.toggle("open");
-})
+} )
 
 
 var typed = new Typed (".input", {
