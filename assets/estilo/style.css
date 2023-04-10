@@ -161,10 +161,10 @@ nav .navlinks li a{
 #projetos h2 {
     text-align: center;
     font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
-    color: rgb(210, 210, 210);
+    color: white;
     padding-top: 20px;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .proj {
     display: flex;
@@ -198,21 +198,22 @@ nav .navlinks li a{
 
 #habilidades {
     background-color: #222;
-    
 }
 #habilidades h2 {
     text-align: center;
-    color: rgb(210, 210, 210);
+    color: white;
     padding-top: 50px;
     font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 #habilidades .itens {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
-    margin: 0px auto;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    
 }
 .itens .logo {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.273);
@@ -268,6 +269,9 @@ nav .navlinks li a{
 /* Design responsivo e navegação para telas pequenas */
 
 @media(max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
     nav .menu {
         display: initial;
     }
@@ -330,12 +334,8 @@ nav .navlinks li a{
     }
     .container .itens{
         display: flex;
-        align-items: center;
         justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        
+        align-items: center; 
     }
     .text {
         padding: 40px 0px;
