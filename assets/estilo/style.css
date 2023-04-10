@@ -294,10 +294,10 @@ nav .navlinks li a{
     nav .navlinks {
         position: absolute;
         top: 110px;
-        right: -100%;
+        right:-40%;
         bottom: 0;
-        width: 60%;
-        height: 60%;
+        width: 30%;
+        height: 40%;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px #222;
