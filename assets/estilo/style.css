@@ -38,12 +38,13 @@ header {
     height: 45px;
     width: 45px;
     background-color: blue;
+    font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
     border-radius: 50%;
     color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     cursor: pointer;
     text-align: center;
 }
@@ -172,7 +173,7 @@ nav .navlinks li a{
     max-width: 960px;
     margin: 0px auto;
 }
-.pro {
+.proj {
     border-radius: 20px;
     padding-bottom: 20px;
 }
@@ -270,7 +271,7 @@ nav .navlinks li a{
 
 @media(max-width: 800px) {
     body{
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
     nav .menu {
         display: initial;
