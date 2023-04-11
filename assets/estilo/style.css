@@ -13,12 +13,12 @@ body {
 .cabeçalho {
     width: 100%;
     height: 100%;
-    min-height: 100vh;
+    min-height: 95vh;
     background: #222;
 }
 .embrulho {
     width: 1280px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -35,8 +35,8 @@ header {
     align-items: center;
 }
 .logo i {
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     background-color: blue;
     font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
     border-radius: 50%;
@@ -157,6 +157,7 @@ nav .navlinks li a{
 
 #projetos {
     background-color: #333;
+    width: 100vw;
 }
 
 #projetos h2 {
@@ -173,10 +174,6 @@ nav .navlinks li a{
     max-width: 960px;
     margin: 0px auto;
 }
-.proj {
-    border-radius: 20px;
-    padding-bottom: 20px;
-}
 .pro img {
     width: 300px;
     height: 175px;
@@ -185,7 +182,7 @@ nav .navlinks li a{
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.249);
 }
-.pro:hover img{
+.pro img:hover{
     background-color: #222;
     transition-duration: 0.7s;
     scale: 1.03;
@@ -193,38 +190,44 @@ nav .navlinks li a{
 .pro p {
     color: white;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: 50px;
 }
 
 /* Parte de HABILIDADES */
 
 #habilidades {
     background-color: #222;
+    width: 100vw;
 }
 #habilidades h2 {
     text-align: center;
     color: white;
-    padding-top: 50px;
-    font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+    padding: 50px 0px 50px 0px;
+    font-family: 'Black Ops One', Arial;
     font-weight: 200;
     font-size: 3rem;
 }
-#habilidades .itens {
+.container3 .itens {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 600px;
+    margin: 0px auto;
     justify-content: center;
     align-items: center;
-    
 }
 .itens .logo {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.273);
-    border-radius: 20px;
-    margin-right: 50px;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    margin: 0px 10px 0px 20px;
     margin-bottom: 50px;
-}
-.itens .logo img {
     width: 100px;
     height: 100px;
+}
+.logo img {
+    width: 90px;
+    height: 90px;
 }
 
 .logo:hover img{
@@ -235,7 +238,7 @@ nav .navlinks li a{
 /* RODAPÉ */
 
 #footer {
-    width: 100%;
+    width: 100vw;
     background-color: #333;
 }
 .footer-cont{
@@ -328,15 +331,16 @@ nav .navlinks li a{
         flex-direction: column;
         padding-top: 2rem;
     }
-    .container .proj{
+    .proj{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .container .itens{
+    .itens{
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        align-items: center; 
     }
     .text {
         padding: 40px 0px;
